@@ -1,0 +1,14 @@
+body{
+	background-color: #ffff99;
+	background-image: url("1.jpg");
+	background-repeat: no-repeat;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+tr,td {
+    border: 1px solid black;	
+}

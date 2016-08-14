@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Teste
+		</title>		
+
+		<link rel="stylesheet" type="text/css" href="stilo.css">
+
+		<script>
+
+		    var cont = 1;
+			function insere(){
+
+				var nome = document.getElementById("nome").value;
+				var end = document.getElementById("end").value;
+				var cpf = document.getElementById("cpf").value;				
+
+				document.getElementById("tab").innerHTML += "<tr id=\"linha"+cont+"\"><td>"+nome+"</td><td>"+end+"</td><td>"+cpf+"</td></tr>";
+				cont++;
+				 
+			}
+			
+			function remove(){
+   				var i = cont-1;
+				document.getElementById('tab').deleteRow(i);
+
+				cont--;
+			}
+
+			
+		</script>
+	</head>
+	
+	<body>
+	Nome:<br />	
+	<input type="text" id="nome">
+	<br />
+	Endereço:<br />	
+	<input type="text" id="end">
+	<br />
+	CPF:<br />	
+	<input type="number" id="cpf">
+	<br />
+	<br />
+    <input type="button" value="Insere" onclick="insere()">
+    <input type="button" value="Remove" onclick="remove()">
+    <br /><br />
+	<table id="tab">
+		<tr><td>Nome</td><td>Endereço</td><td>CPF</td></tr>
+	</table>
+
+	<ul>
+		<li>Brasil</li>
+		<ol>
+		<li>Rio de Janeiro</li>
+		<li>São Paulo</li>
+	    </ol>
+	<li>Estados Unidos</li>
+	    <ol type=a>
+		<li>New York</li>
+		<li>São Francisco</li>
+	    </ol>
+	</ul>
+
+	
+	
+	
+		
+	</body>
+</html>
